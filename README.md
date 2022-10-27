@@ -1,5 +1,4 @@
 # MobileApp
-===
 
 # APP_NAME_HERE
 
