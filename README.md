@@ -1,6 +1,7 @@
-# MobileApp
+# MobileApp - MVP Group 
 
-# APP_NAME_HERE
+
+# Tasty Recipe Creations
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -10,16 +11,16 @@
 
 ## Overview
 ### Description
-[Description of your app]
+The Tasty Recipe Creations app will allow users to look up and capture online recipes. It will allow them to get ideas for a meal plan. It was also provide instructions on how to cook that specific meal.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+
+- **Category:** Recipes 
+- **Mobile:** Users can use the app to get recipes for certain meals.
+- **Story:** Users can post before and after picture of how their meal looked. 
+- **Market:** Anyone who enjoys cooking and learning new recipes will enjoy this app.
+- **Habit:** Users can use this app at anytime of the day. They can get recipes for any meal of the day. Breakfast, snack, lunch, dinner and dessert.
+- **Scope:** V1 would allow users can post and view recipes with images and to view a timeline of recipes posted by other users. V2 would allow user to comment on, like, and favorite other users' recipes. 
 
 ## Product Spec
 
@@ -27,48 +28,83 @@
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can login 
+* User can sign up
+* User can post photos 
+* User can view a feed of recipes
+* User can search for recipes
+* User can favorite a recipe
+* User can have a favorite list
+* User can view others meals
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can add someone
+* User can add a comment to a photo
+* User can like a photo
+* User can talk with other users
+* User can get help from others
 
 ### 2. Screen Archetypes
-
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login Screen (Only shows up when not logged in)
+    * User can login here
+* Sign Up Screen (Only shows up when not logged in)
+    * User can create an account here
+* Home Screen 
+    * User can choose what type of recipes they want to see:
+        * Breakfast
+        * Lunch
+        * Dinner
+        * Dessert
+    * User can view recipes
+    * User can search recipes
+    * User can favorite recipes
+* Creation Screen
+    * User can post a recipe with  directions and an image
+* Saved Recipes Screen
+    * User can view favorited/saved recipes
+    * User can view favorited/saved recipes’ details
+    * User can unfavorite recipes
+  
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
-
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home Screen
+* Post Recipe Screen
+* Saved Recipes Screen
 
 **Flow Navigation** (Screen to Screen)
+* Login Screen
+    * => Sign Up Screen
+    * => Home Screen
+* Sign Up Screen
+    * => Home Screen
+* Home Screen (main page - allows us to select food category)
+    * => Home Feed Screen (displays recipes of the selected category)
+* Post Recipe Screen
+    * => Post Success Screen
+* Saved Recipes Screen
+    * => Recipe Details Screen
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://media.giphy.com/media/93D02kRJMY6T9thuIw/giphy.gif" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
+#### Login Flow
+<img
+src="https://i.imgur.com/cmMzouF.jpg" width=600>
+#### App Flow
+<img
+src="https://i.imgur.com/BrGf7eI.jpg" width=600>
+
 
 ### [BONUS] Interactive Prototype
 
+![](https://media.giphy.com/media/87rw1zTPSzW23lJ6QZ/giphy.gif)
+[](https://www.figma.com/proto/ynUmzvnTVpUYKy2m0ljzIf/MVP-Recipes-app?page-id=0%3A1&node-id=11%3A1036&viewport=278%2C281%2C0.19&scaling=scale-down&starting-point-node-id=1%3A2)
+> [Link to prototype: https://www.figma.com/proto/ynUmzvnTVpUYKy2m0ljzIf/MVP-Recipes-app?page-id=0%3A1&node-id=11%3A1036&viewport=278%2C281%2C0.19&scaling=scale-down&starting-point-node-id=1%3A2]
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
@@ -78,24 +114,19 @@
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
-
-Mobile App Dev - App Brainstorming Example
+App Brainstorming
 ===
 
 ## Favorite Existing Apps - List
-1. Instagram
-1. Wag
-1. Rover
-1. Coinbase
-1. Waze
-1. Notes
-1. Messages
-1. Facebook Messenger
-1. Craigslist Client
-1. Yelp
+1. Food Network Kitchen
+1. Shef
+3. Tasty
+4. Yummly Recipes
+5. AllRecipes
+
 
 ## Favorite Existing Apps - Categorize and Evaluate
-### Instagram
+### Food Network Kitchen
    - **Category:** Photo & Video / Social 
    - **Mobile:** Website is view only, uses camera, mobile first experience.
    - **Story:** Allows users to share their lives in pictures and enhance their content with filters
@@ -106,17 +137,16 @@ Mobile App Dev - App Brainstorming Example
    - **Category:**...
 
 ## New App Ideas - List
-1. Student Behavior Tracker
-   - Allows teachers, students and parents to stay up to date with student behavior in real time. Teachers can acknowledge positive student behavior when it happens, students can receive instant positive reinforcement and parents can be more tuned in to how their child is doing at school.
-3. Tutor Finder
-4. Used Text Book Exchange
-5. 
-6. ...   
+1. Recipe Book App
+3. Social Media App
+4. Outfit Ideas depending on Weather
+5. Messenger App
+6. Homework Help App
 
 ## Top 3 New App Ideas
-1. Student Behavior Tracker
-2. Tutor Finder
-3. Used Book Exchange
+1. Recipe Book App
+2. Social Media App
+3. Outfit Ideas depending on Weather App
 
 ## New App Ideas - Evaluate and Categorize
 1. Student Behavior Tracker
@@ -127,7 +157,4 @@ Mobile App Dev - App Brainstorming Example
    - **Market:** Any school district or individual classroom teacher of any grade could utilize this app. District wide licensing and custom features could be used for monetization. 
    - **Habit:** Teachers are using this constantly throughout the school day. Students are using the app daily to check their performance and cash in on rewards.
    - **Scope:** V1 would allow teachers to access a roster of students and input behavior logs. Could actually be tested by a real teacher with a class of students. V2 would incorporate a student facing version for students to see their performance. V3 would add a way for students to earn and obtain rewards for goals met. V4 would incorporate a parent facing version.
-
-
-
 
