@@ -160,7 +160,7 @@ App Brainstorming
 
 ## Schema 
 ### Models
-#### Post
+#### Recipe
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
@@ -168,9 +168,37 @@ App Brainstorming
    | author        | Pointer to User| author of recipe posted|
    | recipeName    | String   | display name of recipe |
    | description   | String   | subtitle or description of recipe |
+   | category      | String   | type of recipe (breakfast, lunch, dinner or dessert) |
    | image | File   | display image for the recipe |
    | directions    | String   | directions for the recipe |
    | preparationTime| Number | time in minutes that it will take to prepare the recipe |
    | cookingTime   | Number | time in minutes that it will take to cook the recipe |
    | createdAt     | DateTime | date when recipe is created (default field) |
    | updatedAt     | DateTime | date when recipe is last update (default field) |
+   
+### Networking
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query all Recipes where user is author
+         ```swift
+         let query = PFQuery(className:"Recipe")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let recipes = recipes {
+               print("Successfully retrieved \(recipes.count) recipes.")
+           // TODO: Do something with recipes...
+            }
+         }
+         ```
+      - (Read/Get) get all recipes of a specific category
+      - (Delete) Delete existing like
+      - (Create/POST) Create a new comment on a post
+      - (Delete) Delete existing comment
+   - Create Post Screen
+      - (Create/POST) Create a new post object
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
