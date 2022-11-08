@@ -158,3 +158,19 @@ App Brainstorming
    - **Habit:** Teachers are using this constantly throughout the school day. Students are using the app daily to check their performance and cash in on rewards.
    - **Scope:** V1 would allow teachers to access a roster of students and input behavior logs. Could actually be tested by a real teacher with a class of students. V2 would incorporate a student facing version for students to see their performance. V3 would add a way for students to earn and obtain rewards for goals met. V4 would incorporate a parent facing version.
 
+## Schema 
+### Models
+#### Post
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user posted recipe (default field) |
+   | author        | Pointer to User| author of recipe posted|
+   | recipeName    | String   | display name of recipe |
+   | description   | String   | subtitle or description of recipe |
+   | image | File   | display image for the recipe |
+   | directions    | String   | directions for the recipe |
+   | preparationTime| Number | time in minutes that it will take to prepare the recipe |
+   | cookingTime   | Number | time in minutes that it will take to cook the recipe |
+   | createdAt     | DateTime | date when recipe is created (default field) |
+   | updatedAt     | DateTime | date when recipe is last update (default field) |
