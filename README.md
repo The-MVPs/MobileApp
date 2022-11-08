@@ -194,11 +194,10 @@ App Brainstorming
          }
          ```
       - (Read/Get) get all recipes of a specific category
-      - (Delete) Delete existing like
-      - (Create/POST) Create a new comment on a post
-      - (Delete) Delete existing comment
-   - Create Post Screen
-      - (Create/POST) Create a new post object
+   - Create Recipe Screen
+      - (Create/POST) Create a new recipe object
    - Profile Screen
       - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
+   - Saved Recipes screen
+      - (Read/GET) Query user's favorited/saved recipes
+      - (Delete) Delete saved recipes from saved list
