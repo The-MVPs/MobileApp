@@ -194,6 +194,17 @@ App Brainstorming
          }
          ```
       - (Read/Get) get all recipes of a specific category
+         ```swift
+         let query = PFQuery(className:"Recipe")
+         query.whereKey("category", equalTo: selectedRecipeCategory)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let recipes = recipes {
+               print("Successfully retrieved \(recipes.count) recipes.")
+            }
+        ```
    - Create Recipe Screen
       - (Create/POST) Create a new recipe object
    - Profile Screen
