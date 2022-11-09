@@ -204,6 +204,7 @@ App Brainstorming
             } else if let recipes = recipes {
                print("Successfully retrieved \(recipes.count) recipes.")
             }
+         }
         ```
    - Create Recipe Screen
       - (Create/POST) Create a new recipe object
