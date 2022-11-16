@@ -227,10 +227,9 @@ Time spent: **7** hours spent in total
 
 The following are completed functionalities:
 
-- [x] User will be able to login
+- [x] User will be able to input login
 - [x] User will be able to input password
-- [x] User will be able to switch screens to create account
-- [x] User will be able to stay logged in after exiting
+- [x] Create launch screen
 - [x] Create login screen
 
 ## Video Walkthrough
