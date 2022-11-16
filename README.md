@@ -8,7 +8,7 @@
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
-3. [Milestone 1] (#Milestone-1)
+3. [Milestone 1](#Milestone-1)
 
 ## Overview
 ### Description
