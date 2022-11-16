@@ -219,7 +219,7 @@ App Brainstorming
       
  ## Milestone 1
  
-This is the first milestone to completely our recipe book. It will allow a user to login or create an account.
+This is the first milestone that will lead to the completion of our recipe book. It will allow a user to login or create an account.
 
 Time spent: **7** hours spent in total
 
