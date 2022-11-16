@@ -8,6 +8,7 @@
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
+3. [Milestone 1] (#Milestone-1)
 
 ## Overview
 ### Description
@@ -213,3 +214,27 @@ App Brainstorming
    - Saved Recipes screen
       - (Read/GET) Query user's favorited/saved recipes
       - (Delete) Delete saved recipes from saved list
+      
+      
+      
+ ## Milestone 1
+ 
+This is the first milestone to completely our recipe book. It will allow a user to login or create an account.
+
+Time spent: **7** hours spent in total
+
+## User Stories
+
+The following are completed functionalities:
+
+- [x] User will be able to login
+- [x] User will be able to input password
+- [x] User will be able to switch screens to create account
+- [x] User will be able to stay logged in after exiting
+- [x] Create login screen
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='GIF RIGHT HERE' title='Video Walkthrough' width='' alt='Video Walkthrough' />
