@@ -236,4 +236,4 @@ The following are completed functionalities:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/The-MVPs/MobileApp/blob/main/Recipes-App/gifs/milestone1loginpage.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/The-MVPs/MobileApp/blob/main/Recipes-App/gifs/milestone1loginpage.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
