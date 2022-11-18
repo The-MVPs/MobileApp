@@ -250,10 +250,11 @@ Time spent: **8** hours spent in total
 
 The following are completed functionalities:
 
-- [x] User will be able to input login
-- [x] User will be able to input password
-- [x] Create launch screen
-- [x] Create login screen
+- [x] User will be able to see and choose the available categories of meals 
+- [x] Create Detail Screen
+- [x] Create menu recipes screen
+- [x] User will be able to favorite recipes on screen
+- [x] Search bar is available for user to look for recipes
 
 ## Video Walkthrough
 
