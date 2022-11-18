@@ -107,14 +107,6 @@ src="https://i.imgur.com/BrGf7eI.jpg" width=600>
 ![](https://media.giphy.com/media/87rw1zTPSzW23lJ6QZ/giphy.gif)
 [](https://www.figma.com/proto/ynUmzvnTVpUYKy2m0ljzIf/MVP-Recipes-app?page-id=0%3A1&node-id=11%3A1036&viewport=278%2C281%2C0.19&scaling=scale-down&starting-point-node-id=1%3A2)
 > [Link to prototype: https://www.figma.com/proto/ynUmzvnTVpUYKy2m0ljzIf/MVP-Recipes-app?page-id=0%3A1&node-id=11%3A1036&viewport=278%2C281%2C0.19&scaling=scale-down&starting-point-node-id=1%3A2]
-## Schema 
-[This section will be completed in Unit 9]
-### Models
-[Add table of models]
-### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
 
 App Brainstorming
 ===
@@ -135,8 +127,6 @@ App Brainstorming
    - **Market:** Anyone that takes pictures could enjoy this app. Ability to follow and hashtag based on interests and categories allows users with unique interests to engage with relevant content.
    - **Habit:** Users can post throughout the day many times. Features like "Stories" encourage more candid posting as well. Users can explore endless pictures in any category imaginable whenever they want. Very habbit forming!
    - **Scope:** Instagram started out extremely narrow focused, just posting pics and viewing feeds. Has expanded to a somewhat larger scope including "Instagram Stories" (a la SnapChat) and messenger features. 
-### Rover
-   - **Category:**...
 
 ## New App Ideas - List
 1. Recipe Book App
