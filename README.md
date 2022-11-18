@@ -9,6 +9,7 @@
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
 3. [Milestone 1](#Milestone-1)
+4. [Milestone 2](#Milestone-2)
 
 ## Overview
 ### Description
@@ -237,3 +238,25 @@ The following are completed functionalities:
 Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/The-MVPs/MobileApp/blob/main/Recipes-App/gifs/milestone1loginpage.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
+
+
+  ## Milestone 2
+  
+ This is our second milestone out of four. This milestone will allow the user to be able to login and choose the type of meal they want. Then they will be able to see recipes. 
+
+Time spent: **8** hours spent in total
+
+## User Stories
+
+The following are completed functionalities:
+
+- [x] User will be able to input login
+- [x] User will be able to input password
+- [x] Create launch screen
+- [x] Create login screen
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='Add link' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
