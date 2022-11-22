@@ -71,6 +71,7 @@
                     <connections>
                         <outlet property="passwordField" destination="1SF-dG-Hia" id="Imf-m4-m1q"/>
                         <outlet property="usernameField" destination="phG-9y-WUI" id="X64-6A-tbF"/>
+                        <segue destination="nN5-Ae-7Il" kind="presentation" identifier="loginSegue" id="fdu-Th-6Ss"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -82,7 +83,7 @@
             <objects>
                 <viewController id="f1M-FA-d8Y" customClass="FeedViewController" customModule="Recipes_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kf4-OE-Ecz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="OKf-Gc-gPo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -99,7 +100,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nN5-Ae-7Il" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ynd-fH-gI3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
