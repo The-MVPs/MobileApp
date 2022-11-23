@@ -242,9 +242,11 @@ The following are completed functionalities:
 
 - [x] User will be able to move to the favorite list screen
 - [x] User will be able to travel to the creation screen
+- [x] Create meal screen
+- [x] Create Tab Controller
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='Add link' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/tZfWNMUXbi.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
