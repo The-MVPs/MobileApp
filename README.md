@@ -240,11 +240,8 @@ Time spent: **8** hours spent in total
 
 The following are completed functionalities:
 
-- [x] User will be able to see and choose the available categories of meals 
-- [x] Create Detail Screen
-- [x] Create menu recipes screen
-- [x] User will be able to favorite recipes on screen
-- [x] Search bar is available for user to look for recipes
+- [x] User will be able to move to the favorite list screen
+- [x] User will be able to travel to the creation screen
 
 ## Video Walkthrough
 
