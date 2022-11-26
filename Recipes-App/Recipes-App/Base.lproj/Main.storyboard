@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ll1-n9-npk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -102,7 +101,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="X8e-xw-dHt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ynd-fH-gI3">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -119,7 +118,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="38g-AK-zd6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nD8-Tm-BPV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="x8d-gU-EYp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -135,7 +134,7 @@
             <objects>
                 <viewController id="fUZ-ol-Vt7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t8Z-nj-IU6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="uaE-k6-XpV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -151,7 +150,7 @@
             <objects>
                 <viewController id="gRr-fg-bnd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vap-oT-eWk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="qEx-jE-QhU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -167,44 +166,54 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="OiF-9D-13B" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y8g-qg-YdE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-lU-2ag">
-                                <rect key="frame" x="20" y="136" width="374" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-lU-2ag">
+                                <rect key="frame" x="50" y="239" width="314.5" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fE8-lU-2ag" secondAttribute="height" multiplier="370:60" id="gsI-Vv-PId"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Breakfast">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-o8-SGi">
-                                <rect key="frame" x="20" y="269" width="374" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-o8-SGi">
+                                <rect key="frame" x="50" y="340" width="314.5" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JJd-o8-SGi" secondAttribute="height" multiplier="370:60" id="9Pa-Rj-AUm"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Lunch">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwJ-sq-sqS">
-                                <rect key="frame" x="20" y="403" width="374" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwJ-sq-sqS">
+                                <rect key="frame" x="50" y="441" width="314.5" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IwJ-sq-sqS" secondAttribute="height" multiplier="370:60" id="rUi-h5-T8U"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Snack">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-H5-cQz">
-                                <rect key="frame" x="20" y="532" width="374" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-H5-cQz">
+                                <rect key="frame" x="50" y="542" width="314.5" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bGE-H5-cQz" secondAttribute="height" multiplier="370:60" id="xHf-md-obH"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Dinner">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick Your Meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsA-VR-YPe">
-                                <rect key="frame" x="82" y="40" width="250" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Your Meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsA-VR-YPe">
+                                <rect key="frame" x="82" y="141" width="250" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="JBO-yQ-BVG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -212,6 +221,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jJy-jo-6zC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bGE-H5-cQz" firstAttribute="top" secondItem="IwJ-sq-sqS" secondAttribute="bottom" constant="50" id="58E-m7-x5T"/>
+                            <constraint firstItem="jJy-jo-6zC" firstAttribute="bottom" secondItem="bGE-H5-cQz" secondAttribute="bottom" constant="200" id="679-gB-Yho"/>
+                            <constraint firstItem="bGE-H5-cQz" firstAttribute="top" secondItem="IwJ-sq-sqS" secondAttribute="bottom" constant="50" id="GBb-AF-VY9"/>
+                            <constraint firstItem="IwJ-sq-sqS" firstAttribute="top" secondItem="JJd-o8-SGi" secondAttribute="bottom" constant="50" id="Hlp-xD-VhR"/>
+                            <constraint firstItem="IwJ-sq-sqS" firstAttribute="top" secondItem="JJd-o8-SGi" secondAttribute="bottom" constant="50" id="Kuz-xg-teJ"/>
+                            <constraint firstItem="bGE-H5-cQz" firstAttribute="centerX" secondItem="y8g-qg-YdE" secondAttribute="centerX" id="Wba-Bg-cq5"/>
+                            <constraint firstItem="NsA-VR-YPe" firstAttribute="centerX" secondItem="y8g-qg-YdE" secondAttribute="centerX" id="g6m-hN-y3M"/>
+                            <constraint firstItem="fE8-lU-2ag" firstAttribute="centerX" secondItem="y8g-qg-YdE" secondAttribute="centerX" id="jlj-Bm-InS"/>
+                            <constraint firstItem="IwJ-sq-sqS" firstAttribute="centerX" secondItem="y8g-qg-YdE" secondAttribute="centerX" id="mfi-X5-nua"/>
+                            <constraint firstItem="JJd-o8-SGi" firstAttribute="top" secondItem="fE8-lU-2ag" secondAttribute="bottom" constant="50" id="qDe-qk-MNH"/>
+                            <constraint firstItem="fE8-lU-2ag" firstAttribute="top" secondItem="NsA-VR-YPe" secondAttribute="bottom" constant="50" id="w4M-3S-jeY"/>
+                            <constraint firstItem="JJd-o8-SGi" firstAttribute="top" secondItem="fE8-lU-2ag" secondAttribute="bottom" constant="50" id="wJz-Gn-Q6a"/>
+                            <constraint firstItem="JJd-o8-SGi" firstAttribute="centerX" secondItem="y8g-qg-YdE" secondAttribute="centerX" id="y1d-re-gQi"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="house" catalog="system" id="iEr-eH-3HF"/>
                     <navigationItem key="navigationItem" id="mGQ-wU-ZhH"/>
@@ -243,9 +267,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bookmark" catalog="system" width="110" height="128"/>
-        <image name="house" catalog="system" width="128" height="104"/>
-        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="tasty_recipe_logo" width="1080" height="1080"/>
         <systemColor name="systemBackgroundColor">
