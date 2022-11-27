@@ -230,9 +230,9 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Post Recipe"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afm-58-izr">
-                                                <rect key="frame" x="27" y="706" width="180" height="31"/>
+                                                <rect key="frame" x="27" y="706" width="131.5" height="31"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="afm-58-izr" secondAttribute="height" multiplier="180:31" id="DCs-Ii-euQ"/>
+                                                    <constraint firstAttribute="width" secondItem="X4U-qg-9wh" secondAttribute="width" constant="180" id="DCs-Ii-euQ"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" image="photo" catalog="system" title="Camera Roll "/>

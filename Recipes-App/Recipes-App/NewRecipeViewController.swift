@@ -60,6 +60,7 @@ class NewRecipeViewController: UIViewController, UIImagePickerControllerDelegate
     }
     
     @IBAction func onImageTap(_ sender: Any) {
+        imageView.image = UIImage(systemName:"camera.circle")
     }
     
     /*
