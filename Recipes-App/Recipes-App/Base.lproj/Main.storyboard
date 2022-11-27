@@ -116,7 +116,7 @@
         <!--New Recipe-->
         <scene sceneID="02U-LT-lhy">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="38g-AK-zd6" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="38g-AK-zd6" customClass="NewRecipeViewController" customModule="Recipes_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nD8-Tm-BPV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1246"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,24 +213,35 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preparation Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrS-OR-r7H">
-                                                <rect key="frame" x="27" y="721" width="130" height="21"/>
+                                                <rect key="frame" x="27" y="757" width="374" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMe-iE-X66">
-                                                <rect key="frame" x="27" y="886" width="105" height="21"/>
+                                                <rect key="frame" x="27" y="922" width="105" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCu-89-Tiy">
-                                                <rect key="frame" x="163.5" y="1091" width="101" height="31"/>
+                                                <rect key="frame" x="163.5" y="1127" width="101" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Post Recipe"/>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afm-58-izr">
+                                                <rect key="frame" x="27" y="706" width="180" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="afm-58-izr" secondAttribute="height" multiplier="180:31" id="DCs-Ii-euQ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="photo" catalog="system" title="Camera Roll "/>
+                                                <connections>
+                                                    <action selector="onCameraRollButton:" destination="38g-AK-zd6" eventType="touchUpInside" id="aO6-He-PBJ"/>
+                                                </connections>
+                                            </button>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK9-hD-Hni">
-                                                <rect key="frame" x="27" y="752" width="374" height="120"/>
+                                                <rect key="frame" x="27" y="788" width="374" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="SKG-OK-Xs0"/>
                                                     <constraint firstAttribute="height" constant="120" id="UKs-z6-IcR"/>
@@ -239,20 +250,36 @@
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jj4-om-J4j">
                                                 <rect key="frame" x="27" y="501.5" width="374" height="199"/>
                                                 <color key="tintColor" systemColor="systemGrayColor"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="8eo-sI-mAz"/>
                                                     <constraint firstAttribute="height" constant="200" id="B9i-2g-8Sc"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Aly-kE-vwV" appends="YES" id="kwc-O5-Oxm"/>
+                                                </connections>
                                             </imageView>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hp5-Fc-abi">
-                                                <rect key="frame" x="54" y="921" width="320" height="120"/>
+                                                <rect key="frame" x="54" y="957" width="320" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="DtY-cG-KPb"/>
                                                 </constraints>
                                             </datePicker>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X4U-qg-9wh">
+                                                <rect key="frame" x="221" y="706" width="180" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="7I6-qt-Qg5"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="camera" catalog="system" title="Camera"/>
+                                                <connections>
+                                                    <action selector="onCameraButton:" destination="38g-AK-zd6" eventType="touchUpInside" id="x8l-QA-hvC"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.87539781110484371" green="1" blue="0.86500951196766307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="X4U-qg-9wh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="afm-58-izr" secondAttribute="trailing" constant="8" symbolic="YES" id="0Sn-Ct-mfg"/>
                                             <constraint firstItem="dw2-8k-eAT" firstAttribute="top" secondItem="Wvb-Hd-vbW" secondAttribute="bottom" constant="10" id="0gU-R6-vy4"/>
                                             <constraint firstItem="dMe-iE-X66" firstAttribute="top" secondItem="AK9-hD-Hni" secondAttribute="bottom" constant="14" id="2oO-xg-Ik9"/>
                                             <constraint firstItem="pg4-kI-R3k" firstAttribute="top" secondItem="TeB-95-nz6" secondAttribute="bottom" constant="10" id="5zU-zd-VFb"/>
@@ -266,18 +293,21 @@
                                             <constraint firstItem="APV-7s-Fin" firstAttribute="top" secondItem="dw2-8k-eAT" secondAttribute="bottom" constant="20" id="BDP-M6-joU"/>
                                             <constraint firstItem="WKP-AF-iXz" firstAttribute="top" secondItem="kJ8-Kp-ZxK" secondAttribute="bottom" constant="20" id="BFn-md-vdw"/>
                                             <constraint firstItem="APV-7s-Fin" firstAttribute="leading" secondItem="usI-W9-Iky" secondAttribute="leading" constant="27" id="C7P-mM-v15"/>
+                                            <constraint firstItem="afm-58-izr" firstAttribute="leading" secondItem="usI-W9-Iky" secondAttribute="leading" constant="27" id="E9a-jg-mmy"/>
                                             <constraint firstItem="YJe-hv-Vgk" firstAttribute="top" secondItem="WKP-AF-iXz" secondAttribute="bottom" constant="10" id="Fed-YP-dcm"/>
                                             <constraint firstItem="yF6-ge-qu0" firstAttribute="top" secondItem="YJe-hv-Vgk" secondAttribute="bottom" constant="20" id="Fyv-Zj-DUg"/>
-                                            <constraint firstItem="BrS-OR-r7H" firstAttribute="top" secondItem="Jj4-om-J4j" secondAttribute="bottom" constant="20" id="Gw1-qn-pCD"/>
                                             <constraint firstItem="APV-7s-Fin" firstAttribute="leading" secondItem="dw2-8k-eAT" secondAttribute="leading" id="K3e-Q8-2Km"/>
                                             <constraint firstItem="AK9-hD-Hni" firstAttribute="centerX" secondItem="usI-W9-Iky" secondAttribute="centerX" id="KoI-o9-Zrk"/>
+                                            <constraint firstItem="X4U-qg-9wh" firstAttribute="trailing" secondItem="BrS-OR-r7H" secondAttribute="trailing" id="L9g-30-O8u"/>
                                             <constraint firstItem="APV-7s-Fin" firstAttribute="leading" secondItem="TeB-95-nz6" secondAttribute="leading" id="LSU-My-3Yo"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yF6-ge-qu0" secondAttribute="trailing" constant="20" symbolic="YES" id="OAr-2C-VuZ"/>
                                             <constraint firstItem="kJ8-Kp-ZxK" firstAttribute="centerX" secondItem="usI-W9-Iky" secondAttribute="centerX" id="OG1-ut-c7c"/>
                                             <constraint firstItem="kJ8-Kp-ZxK" firstAttribute="top" secondItem="APV-7s-Fin" secondAttribute="bottom" constant="10" id="Q0m-wy-bGT"/>
                                             <constraint firstItem="AK9-hD-Hni" firstAttribute="top" secondItem="BrS-OR-r7H" secondAttribute="bottom" constant="10" id="RAo-up-L8b"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="APV-7s-Fin" secondAttribute="trailing" constant="20" symbolic="YES" id="RMx-bi-asY"/>
+                                            <constraint firstItem="afm-58-izr" firstAttribute="top" secondItem="Jj4-om-J4j" secondAttribute="bottom" constant="5" id="WSW-Qq-VzL"/>
                                             <constraint firstItem="YJe-hv-Vgk" firstAttribute="centerX" secondItem="usI-W9-Iky" secondAttribute="centerX" id="Wrm-lx-Yi3"/>
+                                            <constraint firstItem="BrS-OR-r7H" firstAttribute="top" secondItem="afm-58-izr" secondAttribute="bottom" constant="20" id="Xnc-fs-anj"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BrS-OR-r7H" secondAttribute="trailing" constant="20" symbolic="YES" id="YRl-sc-IqY"/>
                                             <constraint firstItem="TeB-95-nz6" firstAttribute="top" secondItem="usI-W9-Iky" secondAttribute="top" constant="20" id="aDk-aa-DUM"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WKP-AF-iXz" secondAttribute="trailing" constant="20" symbolic="YES" id="dIP-vA-3jJ"/>
@@ -293,7 +323,9 @@
                                             <constraint firstItem="dMe-iE-X66" firstAttribute="leading" secondItem="AK9-hD-Hni" secondAttribute="leading" id="ohA-zR-lah"/>
                                             <constraint firstItem="dw2-8k-eAT" firstAttribute="centerX" secondItem="usI-W9-Iky" secondAttribute="centerX" id="pST-iG-gvV"/>
                                             <constraint firstItem="Jj4-om-J4j" firstAttribute="top" secondItem="yF6-ge-qu0" secondAttribute="bottom" constant="10" id="px8-rl-GmN"/>
+                                            <constraint firstItem="X4U-qg-9wh" firstAttribute="trailing" secondItem="AK9-hD-Hni" secondAttribute="trailing" id="qoc-eO-cW4"/>
                                             <constraint firstItem="Hp5-Fc-abi" firstAttribute="centerX" secondItem="usI-W9-Iky" secondAttribute="centerX" id="r40-fd-iuv"/>
+                                            <constraint firstItem="X4U-qg-9wh" firstAttribute="baseline" secondItem="afm-58-izr" secondAttribute="baseline" id="slF-6K-UNZ"/>
                                             <constraint firstItem="dw2-8k-eAT" firstAttribute="centerX" secondItem="usI-W9-Iky" secondAttribute="centerX" id="syy-XZ-yqL"/>
                                             <constraint firstItem="kCu-89-Tiy" firstAttribute="centerX" secondItem="usI-W9-Iky" secondAttribute="centerX" id="u4P-Hd-glS"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dMe-iE-X66" secondAttribute="trailing" constant="20" symbolic="YES" id="uKb-UY-Bm3"/>
@@ -326,10 +358,39 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Recipe" id="fta-dP-GDl"/>
                     <size key="freeformSize" width="414" height="1300"/>
+                    <connections>
+                        <outlet property="cookingDatePicker" destination="Hp5-Fc-abi" id="IFF-hY-rTD"/>
+                        <outlet property="descriptionField" destination="dw2-8k-eAT" id="5zh-qI-DRM"/>
+                        <outlet property="directionsField" destination="YJe-hv-Vgk" id="FaS-Jw-Ovx"/>
+                        <outlet property="imageView" destination="Jj4-om-J4j" id="peD-ZB-nAq"/>
+                        <outlet property="ingredientField" destination="kJ8-Kp-ZxK" id="Ckh-lM-TJd"/>
+                        <outlet property="prepDatePicker" destination="AK9-hD-Hni" id="BTM-QF-jBS"/>
+                        <outlet property="titleField" destination="pg4-kI-R3k" id="9RB-Ms-6ml"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6N-hC-rEy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Aly-kE-vwV">
+                    <connections>
+                        <action selector="onImageTap:" destination="38g-AK-zd6" id="9ir-ct-cBA"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1867" y="1782"/>
+            <point key="canvasLocation" x="1866.6666666666667" y="1781.9196428571427"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4ze-9U-ryF">
+            <objects>
+                <viewController id="kNh-eH-9yy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ktW-Ij-ZXw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="McT-4W-c5d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Lg-Xv-0pN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1403" y="2634"/>
         </scene>
         <!--Saved-->
         <scene sceneID="ng1-ei-2dO">
@@ -508,9 +569,11 @@
     </scenes>
     <resources>
         <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="camera" catalog="system" width="128" height="94"/>
         <image name="camera.circle" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="tasty_recipe_logo" width="1080" height="1080"/>
         <systemColor name="labelColor">
