@@ -7,6 +7,7 @@
 
 import UIKit
 import AlamofireImage
+import Parse
 
 class NewRecipeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -92,12 +93,30 @@ class NewRecipeViewController: UIViewController, UIImagePickerControllerDelegate
     }
     
     @IBAction func onSubmit(_ sender: Any) {
-        //clear datepicker values
-        //maybe clear the camera icon
         
+        let post = PFObject(className: "Recipes")
+        //get text field values and author
+        post["title"] = titleField.text!
+        post["description"] = descriptionField.text!
+        post["author"] = PFUser.current()!
+        post["ingredients"] = ingredientField.text!
+        post["directions"] = directionsField.text!
+        
+        post["preparationTime"] = prepTime
+        post["cookingTime"] = cookingTime
+        //get image
+        let imageData = imageView.image!.pngData()
+        let file = PFFileObject(data: imageData!)
+        post["image"] = file
         
         //send post request
-        
+        post.saveInBackground { success, error in
+            if success {
+                print("saved post!")
+            } else {
+                print("error posting recipe!")
+            }
+        }
         
         //navigate to Succes Page (will have either a back button,
         //or a button that says "post another" or something.
