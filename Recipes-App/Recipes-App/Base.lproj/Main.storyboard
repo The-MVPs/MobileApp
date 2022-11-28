@@ -228,6 +228,9 @@
                                                 <rect key="frame" x="163.5" y="1127" width="101" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Post Recipe"/>
+                                                <connections>
+                                                    <action selector="onSubmit:" destination="38g-AK-zd6" eventType="touchUpInside" id="RmU-9s-Bjq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afm-58-izr">
                                                 <rect key="frame" x="27" y="706" width="131.5" height="31"/>
@@ -246,6 +249,10 @@
                                                     <constraint firstAttribute="width" constant="374" id="SKG-OK-Xs0"/>
                                                     <constraint firstAttribute="height" constant="120" id="UKs-z6-IcR"/>
                                                 </constraints>
+                                                <locale key="locale" localeIdentifier="en_AU"/>
+                                                <connections>
+                                                    <action selector="onPrepTimePicker:" destination="38g-AK-zd6" eventType="valueChanged" id="Ku9-iV-Hkh"/>
+                                                </connections>
                                             </datePicker>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jj4-om-J4j">
                                                 <rect key="frame" x="27" y="501.5" width="374" height="199"/>
@@ -264,6 +271,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="DtY-cG-KPb"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="onCookingTimePicker:" destination="38g-AK-zd6" eventType="valueChanged" id="le8-b4-SZX"/>
+                                                </connections>
                                             </datePicker>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X4U-qg-9wh">
                                                 <rect key="frame" x="221" y="706" width="180" height="31"/>
@@ -359,12 +369,12 @@
                     <navigationItem key="navigationItem" title="New Recipe" id="fta-dP-GDl"/>
                     <size key="freeformSize" width="414" height="1300"/>
                     <connections>
-                        <outlet property="cookingDatePicker" destination="Hp5-Fc-abi" id="IFF-hY-rTD"/>
+                        <outlet property="cookingTimePicker" destination="Hp5-Fc-abi" id="ldf-Mc-yoe"/>
                         <outlet property="descriptionField" destination="dw2-8k-eAT" id="5zh-qI-DRM"/>
                         <outlet property="directionsField" destination="YJe-hv-Vgk" id="FaS-Jw-Ovx"/>
                         <outlet property="imageView" destination="Jj4-om-J4j" id="peD-ZB-nAq"/>
                         <outlet property="ingredientField" destination="kJ8-Kp-ZxK" id="Ckh-lM-TJd"/>
-                        <outlet property="prepDatePicker" destination="AK9-hD-Hni" id="BTM-QF-jBS"/>
+                        <outlet property="prepTimePicker" destination="AK9-hD-Hni" id="Lfb-gp-XaU"/>
                         <outlet property="titleField" destination="pg4-kI-R3k" id="9RB-Ms-6ml"/>
                     </connections>
                 </viewController>
