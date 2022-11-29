@@ -65,6 +65,7 @@ class NewRecipeViewController: UIViewController, UIImagePickerControllerDelegate
     }
     //Clear image by tapping it
     @IBAction func onImageTap(_ sender: Any) {
+        //set image to a system image
         imageView.image = UIImage(systemName:"camera.circle")
     }
     
@@ -113,10 +114,24 @@ class NewRecipeViewController: UIViewController, UIImagePickerControllerDelegate
         post.saveInBackground { success, error in
             if success {
                 print("saved post!")
+                //After successful post:
+                //clear all data from screen
+                self.titleField.text = nil
+                self.descriptionField.text = nil
+                self.ingredientField.text = nil
+                self.directionsField.text = nil
+                //clear image (set to default image)
+                self.imageView.image = UIImage(systemName:"camera.circle")
+                //clear time pickers
+                self.prepTimePicker.countDownDuration = 0.0
+                self.cookingTimePicker.countDownDuration = 0.0
+
+                print("cleared creation screen")
             } else {
                 print("error posting recipe!")
             }
         }
+        
         
         //navigate to Succes Page (will have either a back button,
         //or a button that says "post another" or something.
@@ -124,6 +139,11 @@ class NewRecipeViewController: UIViewController, UIImagePickerControllerDelegate
     
     
 
+    @IBAction func onPostAnotherButton(_ sender: Any) {
+        print("pressed Post another Recipe")
+        dismiss(animated: true, completion: nil)
+        
+    }
     /*
     // MARK: - Navigation
 

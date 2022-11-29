@@ -118,14 +118,14 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="38g-AK-zd6" customClass="NewRecipeViewController" customModule="Recipes_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nD8-Tm-BPV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1246"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1346"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="Mqk-gA-15y">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="1246"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="1346"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usI-W9-Iky">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1179"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1279"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kJ8-Kp-ZxK">
                                                 <rect key="frame" x="27" y="221" width="374" height="76"/>
@@ -230,6 +230,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Post Recipe"/>
                                                 <connections>
                                                     <action selector="onSubmit:" destination="38g-AK-zd6" eventType="touchUpInside" id="RmU-9s-Bjq"/>
+                                                    <segue destination="kNh-eH-9yy" kind="presentation" identifier="succesScreen" id="ObD-eC-dNf"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afm-58-izr">
@@ -367,7 +368,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Recipe" id="fta-dP-GDl"/>
-                    <size key="freeformSize" width="414" height="1300"/>
+                    <size key="freeformSize" width="414" height="1400"/>
                     <connections>
                         <outlet property="cookingTimePicker" destination="Hp5-Fc-abi" id="ldf-Mc-yoe"/>
                         <outlet property="descriptionField" destination="dw2-8k-eAT" id="5zh-qI-DRM"/>
@@ -387,20 +388,49 @@
             </objects>
             <point key="canvasLocation" x="1866.6666666666667" y="1781.9196428571427"/>
         </scene>
-        <!--View Controller-->
+        <!--Success-->
         <scene sceneID="4ze-9U-ryF">
             <objects>
-                <viewController id="kNh-eH-9yy" sceneMemberID="viewController">
+                <viewController title="Success" id="kNh-eH-9yy" customClass="NewRecipeViewController" customModule="Recipes_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ktW-Ij-ZXw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Posted!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfg-Wg-Cuv">
+                                <rect key="frame" x="135.5" y="237" width="143" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xfg-Wg-Cuv" secondAttribute="height" multiplier="143:27" id="hy9-5j-I24"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvo-Uc-Ate">
+                                <rect key="frame" x="129" y="675" width="156" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qvo-Uc-Ate" secondAttribute="height" multiplier="156:31" id="u5c-HY-A5S"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Post Another Recipe"/>
+                                <connections>
+                                    <action selector="onPostAnotherButton:" destination="kNh-eH-9yy" eventType="touchUpInside" id="hPW-53-WfK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="McT-4W-c5d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="McT-4W-c5d" firstAttribute="bottom" secondItem="qvo-Uc-Ate" secondAttribute="bottom" constant="136" id="N3u-9S-XoW"/>
+                            <constraint firstItem="xfg-Wg-Cuv" firstAttribute="centerX" secondItem="ktW-Ij-ZXw" secondAttribute="centerX" id="RZj-dh-FQo"/>
+                            <constraint firstItem="qvo-Uc-Ate" firstAttribute="centerX" secondItem="ktW-Ij-ZXw" secondAttribute="centerX" id="Zrt-23-ny1"/>
+                            <constraint firstItem="xfg-Wg-Cuv" firstAttribute="top" secondItem="McT-4W-c5d" secondAttribute="top" constant="193" id="pPb-nW-dzC"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="og1-1u-4O4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Lg-Xv-0pN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1403" y="2634"/>
+            <point key="canvasLocation" x="1865" y="2695"/>
         </scene>
         <!--Saved-->
         <scene sceneID="ng1-ei-2dO">
