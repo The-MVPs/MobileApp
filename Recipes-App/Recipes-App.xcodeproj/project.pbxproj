@@ -10,12 +10,13 @@
 		67ED6660D3B2F634503B1CD4 /* Pods_Recipes_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1D3EF1084EADCF0FFBA090 /* Pods_Recipes_App.framework */; };
 		F54DF2C5293356D600693071 /* NewRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DF2C4293356D600693071 /* NewRecipeViewController.swift */; };
 		F5C70BCE29247A620085EA50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C70BCD29247A620085EA50 /* LoginViewController.swift */; };
-		F5C70BD029247A7A0085EA50 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C70BCF29247A7A0085EA50 /* FeedViewController.swift */; };
 		F5E3A90D29246F560068E41B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E3A90C29246F560068E41B /* AppDelegate.swift */; };
 		F5E3A90F29246F560068E41B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E3A90E29246F560068E41B /* SceneDelegate.swift */; };
 		F5E3A91429246F560068E41B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E3A91229246F560068E41B /* Main.storyboard */; };
 		F5E3A91629246F5B0068E41B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E3A91529246F5B0068E41B /* Assets.xcassets */; };
 		F5E3A91929246F5B0068E41B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E3A91729246F5B0068E41B /* LaunchScreen.storyboard */; };
+		F5FDF9062936A38500423515 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FDF9052936A38500423515 /* PostCell.swift */; };
+		F5FDF9082936A65000423515 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FDF9072936A65000423515 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,6 @@
 		E119EFB71A4BB2013D2C425A /* Pods-Recipes-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-App.release.xcconfig"; path = "Target Support Files/Pods-Recipes-App/Pods-Recipes-App.release.xcconfig"; sourceTree = "<group>"; };
 		F54DF2C4293356D600693071 /* NewRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeViewController.swift; sourceTree = "<group>"; };
 		F5C70BCD29247A620085EA50 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F5C70BCF29247A7A0085EA50 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F5E3A90929246F560068E41B /* Recipes-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipes-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E3A90C29246F560068E41B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5E3A90E29246F560068E41B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +31,8 @@
 		F5E3A91529246F5B0068E41B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5E3A91829246F5B0068E41B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5E3A91A29246F5B0068E41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FDF9052936A38500423515 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		F5FDF9072936A65000423515 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		FA1D3EF1084EADCF0FFBA090 /* Pods_Recipes_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recipes_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,8 +84,9 @@
 				F5E3A91729246F5B0068E41B /* LaunchScreen.storyboard */,
 				F5E3A91A29246F5B0068E41B /* Info.plist */,
 				F5C70BCD29247A620085EA50 /* LoginViewController.swift */,
-				F5C70BCF29247A7A0085EA50 /* FeedViewController.swift */,
 				F54DF2C4293356D600693071 /* NewRecipeViewController.swift */,
+				F5FDF9052936A38500423515 /* PostCell.swift */,
+				F5FDF9072936A65000423515 /* FeedViewController.swift */,
 			);
 			path = "Recipes-App";
 			sourceTree = "<group>";
@@ -214,9 +217,10 @@
 			files = (
 				F5C70BCE29247A620085EA50 /* LoginViewController.swift in Sources */,
 				F5E3A90D29246F560068E41B /* AppDelegate.swift in Sources */,
-				F5C70BD029247A7A0085EA50 /* FeedViewController.swift in Sources */,
 				F5E3A90F29246F560068E41B /* SceneDelegate.swift in Sources */,
 				F54DF2C5293356D600693071 /* NewRecipeViewController.swift in Sources */,
+				F5FDF9082936A65000423515 /* FeedViewController.swift in Sources */,
+				F5FDF9062936A38500423515 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
