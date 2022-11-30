@@ -251,11 +251,22 @@ Here's a walkthrough of implemented user stories:
 
 <img src='http://g.recordit.co/tZfWNMUXbi.gif' title='Video Walkthrough' width='400' alt='Video Walkthrough' />
 
+
   ## Milestone 3
   
-  ## User Stories
+   This is our third milestone out of four. This milestone will allow the user to be able to post a recipe and add descriptions with other ideas too. The user will also be able to view other recipes. 
+
+Time spent: **6** hours spent in total
   
-  The following are completed functionalities:
+## User Stories
+  
+The following are completed functionalities:
+
+- [x] User will be able to post a recipe with name; description; ingredients; directions; image; prep time; and cooking time
+- [x] User can view all recipes
+- [x] Create recipe screen
+- [x] 
+  
   
   Here's a walkthrough of implemented user stories:
   
