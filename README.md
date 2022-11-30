@@ -249,4 +249,15 @@ The following are completed functionalities:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/tZfWNMUXbi.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/tZfWNMUXbi.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
+
+  ## Milestone 3
+  
+  ## User Stories
+  
+  The following are completed functionalities:
+  
+  Here's a walkthrough of implemented user stories:
+  <img src='https://github.com/The-MVPs/MobileApp/blob/main/Recipes-App/gifs/postRecipeAndViewAllRecipes.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
+
+  
