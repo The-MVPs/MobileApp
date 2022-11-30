@@ -265,7 +265,9 @@ The following are completed functionalities:
 - [x] User will be able to post a recipe with name; description; ingredients; directions; image; prep time; and cooking time
 - [x] User can view all recipes
 - [x] Create recipe screen
-- [x] 
+- [x] User is able to click the type of meal they want whether its breakfast, lunch, or dinner
+- [x] User is able to create a post
+- [x] User is able to see a list of recipes
   
   
   Here's a walkthrough of implemented user stories:
