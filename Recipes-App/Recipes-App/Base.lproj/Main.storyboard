@@ -479,7 +479,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-lU-2ag">
-                                <rect key="frame" x="60.5" y="273" width="293" height="47.5"/>
+                                <rect key="frame" x="60" y="273" width="294" height="47.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fE8-lU-2ag" secondAttribute="height" multiplier="370:60" id="gsI-Vv-PId"/>
                                 </constraints>
@@ -492,7 +492,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-o8-SGi">
-                                <rect key="frame" x="60.5" y="370.5" width="293" height="47.5"/>
+                                <rect key="frame" x="61" y="370.5" width="292" height="47.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JJd-o8-SGi" secondAttribute="height" multiplier="370:60" id="9Pa-Rj-AUm"/>
                                 </constraints>
@@ -502,7 +502,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwJ-sq-sqS">
-                                <rect key="frame" x="60.5" y="468" width="293" height="47.5"/>
+                                <rect key="frame" x="60" y="468" width="294" height="47.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IwJ-sq-sqS" secondAttribute="height" multiplier="370:60" id="rUi-h5-T8U"/>
                                 </constraints>
@@ -512,7 +512,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-H5-cQz">
-                                <rect key="frame" x="60.5" y="565.5" width="293" height="47.5"/>
+                                <rect key="frame" x="61" y="565.5" width="292" height="47.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bGE-H5-cQz" secondAttribute="height" multiplier="370:60" id="xHf-md-obH"/>
                                 </constraints>
@@ -522,7 +522,7 @@
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Your Meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsA-VR-YPe">
-                                <rect key="frame" x="106.5" y="175" width="201.5" height="48"/>
+                                <rect key="frame" x="106.5" y="175" width="201" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="JBO-yQ-BVG"/>
                                 </constraints>
@@ -660,7 +660,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="bookMarkIcon" destination="hAx-Lw-7bO" id="yud-AC-RYB"/>
-                                            <outlet property="cookTimeLabel" destination="K2X-VO-f11" id="G8d-3A-ZEY"/>
+                                            <outlet property="cookTimeLabel" destination="zMC-1s-8X0" id="cOS-gn-sKN"/>
                                             <outlet property="descriptionLabel" destination="nXd-zL-2cO" id="JAe-SS-eT3"/>
                                             <outlet property="feedPhotoView" destination="b3K-bz-gEi" id="aXB-2d-tyT"/>
                                             <outlet property="prepTimeLabel" destination="3bF-47-NSX" id="YWn-F4-LRG"/>
@@ -670,7 +670,7 @@
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUn-aa-mYV">
-                                <rect key="frame" x="-1" y="105" width="412" height="44"/>
+                                <rect key="frame" x="-2" y="105" width="412" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
