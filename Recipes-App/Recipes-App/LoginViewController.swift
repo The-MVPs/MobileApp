@@ -16,8 +16,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         super.viewDidLoad()
         testParseConnection()
+        //need this: for moving to next textfield function
         self.usernameField.delegate = self
         self.passwordField.delegate = self
+        usernameField.tag = 1
+        passwordField.tag = 2
         // Do any additional setup after loading the view.
     }
     func testParseConnection(){
@@ -36,13 +39,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
         super.touchesBegan(touches, with: event)
     }
-    //Dismiss keyboard when pressing Return key
-    //make sure to also have self.textField1.delegate in viewDidLoad()
-    //got this from https://www.youtube.com/watch?v=YCxeWL9q18o
+    
+    //Move to next textfield function
+    //source: https://www.cometchat.com/tutorials/how-to-dismiss-ios-keyboard-swift
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        usernameField.resignFirstResponder()
-        passwordField.resignFirstResponder()
-        return true
+        if let nextField = self.view.viewWithTag(textField.tag + 1) as? UITextField {
+        nextField.becomeFirstResponder()
+        } else {
+        textField.resignFirstResponder()
+        }
+        return false
+        //Dismiss keyboard when pressing Return key
+        //make sure to also have self.textField1.delegate in viewDidLoad()
+        //got this from https://www.youtube.com/watch?v=YCxeWL9q18o
+//        usernameField.resignFirstResponder()
+//        passwordField.resignFirstResponder()
+//        return true
     }
     
     @IBAction func onSignIn(_ sender: Any) {
@@ -74,11 +86,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             } else {
                 print("Error: \(String(describing: error?.localizedDescription))")
             }
-//            if let error = error {
-//                self.displayAlert(withTitle: "Error", message: error.localizedDescription)
-//            } else {
-//                self.displayAlert(withTitle: "Success", message: "Account has been successfully created")
-//            }
+
         }
     }
 
