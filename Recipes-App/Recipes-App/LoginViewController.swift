@@ -7,7 +7,7 @@
 
 import UIKit
 import Parse
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameField: UITextField!
     
     @IBOutlet weak var passwordField: UITextField!
@@ -16,6 +16,8 @@ class LoginViewController: UIViewController {
         
         super.viewDidLoad()
         testParseConnection()
+        self.usernameField.delegate = self
+        self.passwordField.delegate = self
         // Do any additional setup after loading the view.
     }
     func testParseConnection(){
@@ -28,6 +30,19 @@ class LoginViewController: UIViewController {
                 print("An error has occurred!")
             }
         }
+    }
+    //Dismiss keyboard function
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
+    //Dismiss keyboard when pressing Return key
+    //make sure to also have self.textField1.delegate in viewDidLoad()
+    //got this from https://www.youtube.com/watch?v=YCxeWL9q18o
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        usernameField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+        return true
     }
     
     @IBAction func onSignIn(_ sender: Any) {
@@ -66,14 +81,5 @@ class LoginViewController: UIViewController {
 //            }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
