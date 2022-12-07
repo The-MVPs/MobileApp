@@ -618,12 +618,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bookmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hAx-Lw-7bO">
-                                                    <rect key="frame" x="349" y="8" width="45" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="hAx-Lw-7bO" secondAttribute="height" multiplier="70:31" id="Of6-94-9Gf"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tcm-Rx-qys">
                                                     <rect key="frame" x="20" y="11" width="414" height="21.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -634,11 +628,15 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLz-3p-TOa" userLabel="saveButton">
+                                                    <rect key="frame" x="349.5" y="1" width="46.5" height="34"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="3bF-47-NSX" firstAttribute="top" secondItem="nXd-zL-2cO" secondAttribute="bottom" constant="9" id="01A-aw-0c5"/>
                                                 <constraint firstItem="i5L-Ya-jS9" firstAttribute="top" secondItem="nXd-zL-2cO" secondAttribute="bottom" constant="7.5" id="A7H-Sj-j2X"/>
-                                                <constraint firstItem="hAx-Lw-7bO" firstAttribute="trailing" secondItem="3bF-47-NSX" secondAttribute="trailing" id="Ah8-1t-EF6"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="K2X-VO-f11" secondAttribute="bottom" constant="0.5" id="J88-bB-7ce"/>
                                                 <constraint firstItem="3bF-47-NSX" firstAttribute="trailing" secondItem="zMC-1s-8X0" secondAttribute="trailing" id="Mtu-M9-fOq"/>
                                                 <constraint firstItem="nXd-zL-2cO" firstAttribute="leading" secondItem="i5L-Ya-jS9" secondAttribute="leading" id="VsL-JK-7ID"/>
@@ -646,12 +644,13 @@
                                                 <constraint firstItem="K2X-VO-f11" firstAttribute="trailing" secondItem="i5L-Ya-jS9" secondAttribute="trailing" id="Y8G-m2-nTc"/>
                                                 <constraint firstItem="3bF-47-NSX" firstAttribute="leading" secondItem="zMC-1s-8X0" secondAttribute="leading" id="YCv-ac-BPN"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nXd-zL-2cO" secondAttribute="trailing" constant="20" symbolic="YES" id="cuf-3v-vd1"/>
-                                                <constraint firstItem="hAx-Lw-7bO" firstAttribute="trailing" secondItem="mA3-S2-xZf" secondAttribute="trailingMargin" id="exI-DQ-yBU"/>
+                                                <constraint firstItem="b3K-bz-gEi" firstAttribute="top" secondItem="gLz-3p-TOa" secondAttribute="bottom" constant="1" id="dCS-ul-dKT"/>
                                                 <constraint firstItem="K2X-VO-f11" firstAttribute="top" secondItem="i5L-Ya-jS9" secondAttribute="bottom" constant="9" id="lLd-TF-jIE"/>
-                                                <constraint firstItem="b3K-bz-gEi" firstAttribute="top" secondItem="hAx-Lw-7bO" secondAttribute="bottom" constant="8" id="m6z-gt-bLg"/>
                                                 <constraint firstItem="nXd-zL-2cO" firstAttribute="leading" secondItem="K2X-VO-f11" secondAttribute="leading" id="mE6-gF-TUY"/>
                                                 <constraint firstItem="b3K-bz-gEi" firstAttribute="top" secondItem="Tcm-Rx-qys" secondAttribute="bottom" constant="3.5" id="o4j-Pi-QBj"/>
                                                 <constraint firstItem="K2X-VO-f11" firstAttribute="baseline" secondItem="zMC-1s-8X0" secondAttribute="baseline" id="pfq-cP-LEB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gLz-3p-TOa" secondAttribute="trailing" constant="-2" id="sXg-g7-ziq"/>
+                                                <constraint firstItem="3bF-47-NSX" firstAttribute="trailing" secondItem="mA3-S2-xZf" secondAttribute="trailingMargin" id="seD-DX-Ay3"/>
                                                 <constraint firstItem="nXd-zL-2cO" firstAttribute="leading" secondItem="Tcm-Rx-qys" secondAttribute="leading" id="tyR-IO-aL3"/>
                                                 <constraint firstItem="zMC-1s-8X0" firstAttribute="top" secondItem="3bF-47-NSX" secondAttribute="bottom" constant="8" id="vec-gh-3Es"/>
                                                 <constraint firstItem="nXd-zL-2cO" firstAttribute="top" secondItem="b3K-bz-gEi" secondAttribute="bottom" constant="8" id="wfP-ek-F0C"/>
@@ -659,7 +658,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="bookMarkIcon" destination="hAx-Lw-7bO" id="yud-AC-RYB"/>
                                             <outlet property="cookTimeLabel" destination="zMC-1s-8X0" id="cOS-gn-sKN"/>
                                             <outlet property="descriptionLabel" destination="nXd-zL-2cO" id="JAe-SS-eT3"/>
                                             <outlet property="feedPhotoView" destination="b3K-bz-gEi" id="aXB-2d-tyT"/>
@@ -670,7 +668,7 @@
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUn-aa-mYV">
-                                <rect key="frame" x="-2" y="105" width="412" height="44"/>
+                                <rect key="frame" x="-6" y="105" width="413" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>

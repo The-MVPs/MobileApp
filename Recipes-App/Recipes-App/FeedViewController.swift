@@ -14,7 +14,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //global object to store pfobject data
     var posts = [PFObject]()
-    
+    let myRefreshControl = UIRefreshControl()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
