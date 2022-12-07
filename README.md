@@ -275,3 +275,19 @@ The following are completed functionalities:
   <img src='https://github.com/The-MVPs/MobileApp/blob/main/Recipes-App/gifs/postRecipeAndViewAllRecipes.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
 
   
+## Milestone 3.2
+  
+   This is a continuation of the third milestone out of four and further work will be done within the week on the favorite screen functionality. This milestone will allow the user to see the app icon on the home page and also added the button functionality of the favorite button. 
+
+Time spent: **6** hours spent in total
+  
+## User Stories
+  
+The following are completed functionalities:
+
+- [x] User will be able to see app icon on home screen
+- [x] User can use the favorite button to like specific recipes
+  
+  Here's a walkthrough of implemented user stories:
+  
+  <img src='http://g.recordit.co/PZpPUY0C7x.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
