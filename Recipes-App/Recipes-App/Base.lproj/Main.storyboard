@@ -240,7 +240,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afm-58-izr">
-                                                <rect key="frame" x="27" y="785" width="131.5" height="31"/>
+                                                <rect key="frame" x="27" y="785" width="180" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondAttribute="width" constant="180" id="ft9-2T-Dhv"/>
                                                 </constraints>
@@ -293,6 +293,13 @@
                                                     <action selector="onCameraButton:" destination="38g-AK-zd6" eventType="touchUpInside" id="x8l-QA-hvC"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-dv-bmn">
+                                                <rect key="frame" x="27" y="192" width="71" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.87539781110484371" green="1" blue="0.86500951196766307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -479,7 +486,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-lU-2ag">
-                                <rect key="frame" x="60" y="273" width="294" height="47.5"/>
+                                <rect key="frame" x="60.5" y="273" width="293" height="47.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fE8-lU-2ag" secondAttribute="height" multiplier="370:60" id="gsI-Vv-PId"/>
                                 </constraints>
@@ -492,7 +499,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-o8-SGi">
-                                <rect key="frame" x="61" y="370.5" width="292" height="47.5"/>
+                                <rect key="frame" x="60.5" y="370.5" width="293" height="47.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JJd-o8-SGi" secondAttribute="height" multiplier="370:60" id="9Pa-Rj-AUm"/>
                                 </constraints>
@@ -502,7 +509,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwJ-sq-sqS">
-                                <rect key="frame" x="60" y="468" width="294" height="47.5"/>
+                                <rect key="frame" x="60.5" y="468" width="293" height="47.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IwJ-sq-sqS" secondAttribute="height" multiplier="370:60" id="rUi-h5-T8U"/>
                                 </constraints>
@@ -512,7 +519,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-H5-cQz">
-                                <rect key="frame" x="61" y="565.5" width="292" height="47.5"/>
+                                <rect key="frame" x="60.5" y="565.5" width="293" height="47.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bGE-H5-cQz" secondAttribute="height" multiplier="370:60" id="xHf-md-obH"/>
                                 </constraints>
@@ -668,7 +675,11 @@
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUn-aa-mYV">
+<<<<<<< HEAD
                                 <rect key="frame" x="-6" y="105" width="413" height="44"/>
+=======
+                                <rect key="frame" x="-3" y="105" width="412" height="44"/>
+>>>>>>> 13d630a511ca7493e54f71a6bde268e8aac2bc27
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>

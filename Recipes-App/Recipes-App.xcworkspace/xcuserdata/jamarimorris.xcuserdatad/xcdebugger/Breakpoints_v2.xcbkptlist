@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E8FFAE84-A7C3-4477-8C69-5766802C69F9"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1DE7AF7-C5F2-4860-AA1F-BFC36D3851D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Recipes-App/PostCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "PostCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D1DE7AF7-C5F2-4860-AA1F-BFC36D3851D4 - 5da11a23f1fab935"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Recipes_App.PostCell.feedPhotoView.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Recipes-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamarimorris/Desktop/MobileApp/MobileApp/Recipes-App/Recipes-App/PostCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "D1DE7AF7-C5F2-4860-AA1F-BFC36D3851D4 - 58860d2d64584d29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Recipes_App.PostCell.feedPhotoView.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Recipes-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamarimorris/Desktop/MobileApp/MobileApp/Recipes-App/Recipes-App/PostCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "D1DE7AF7-C5F2-4860-AA1F-BFC36D3851D4 - 2a1b03bacb973c38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Recipes_App.PostCell.feedPhotoView.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Recipes-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamarimorris/Desktop/MobileApp/MobileApp/Recipes-App/Recipes-App/PostCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "D1DE7AF7-C5F2-4860-AA1F-BFC36D3851D4 - 32948298c44200e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Recipes_App.PostCell.feedPhotoView.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Recipes-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamarimorris/Desktop/MobileApp/MobileApp/Recipes-App/Recipes-App/PostCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "D1DE7AF7-C5F2-4860-AA1F-BFC36D3851D4 - ee0195d953fb3ce3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Recipes_App.PostCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; Recipes_App.PostCell"
+                  moduleName = "Recipes-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamarimorris/Desktop/MobileApp/MobileApp/Recipes-App/Recipes-App/PostCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "210">
+               </Location>
+               <Location
+                  uuid = "D1DE7AF7-C5F2-4860-AA1F-BFC36D3851D4 - 8f21a6a974f8976f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Recipes_App.PostCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Recipes_App.PostCell&gt;"
+                  moduleName = "Recipes-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamarimorris/Desktop/MobileApp/MobileApp/Recipes-App/Recipes-App/PostCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "167">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
