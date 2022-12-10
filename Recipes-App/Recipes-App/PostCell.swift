@@ -20,9 +20,6 @@ class PostCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        //if favorited:
-        //set favorited image?
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
