@@ -16,6 +16,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var cookTimeLabel: UILabel!
     
     @IBOutlet weak var bookMarkIcon: UIImageView!
+  
     
     override func awakeFromNib() {
         super.awakeFromNib()

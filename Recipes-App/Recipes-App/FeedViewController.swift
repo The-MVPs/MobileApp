@@ -61,10 +61,16 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.cookTimeLabel.text = post["cookingTime"] as? String
         
         
+        
         return cell
 
     }
 
+    
+    @IBAction func onFavorite(_ sender: Any) {
+        print("favorite button")
+    }
+    
 
     
     
