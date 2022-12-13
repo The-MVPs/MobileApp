@@ -8,5 +8,5 @@ target 'Recipes-App' do
   # Pods for Recipes-App
 	pod 'Parse'
 	pod 'AlamofireImage'
-
+	pod 'DropDown'
 end

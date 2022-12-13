@@ -2,4 +2,5 @@ ${PODS_ROOT}/Target Support Files/Pods-Recipes-App/Pods-Recipes-App-frameworks.s
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
 ${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework
+${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
 ${BUILT_PRODUCTS_DIR}/Parse/Parse.framework
