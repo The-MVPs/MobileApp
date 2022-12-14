@@ -30,6 +30,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidAppear(animated)
         let query = PFQuery(className: "Recipes")
         query.includeKey("author")
+        query.whereKey("category", equalTo: selectedCategory)
         query.limit = 20
         
         query.findObjectsInBackground { (posts, error) in
