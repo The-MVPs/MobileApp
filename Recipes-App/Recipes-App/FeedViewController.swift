@@ -15,11 +15,15 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     //global object to store pfobject data
     var posts = [PFObject]()
     let myRefreshControl = UIRefreshControl()
+    var selectedCategory = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+        //set top bar title to the selected category. sent from previous page
+        self.title = selectedCategory
     }
     
     override func viewDidAppear(_ animated: Bool) {

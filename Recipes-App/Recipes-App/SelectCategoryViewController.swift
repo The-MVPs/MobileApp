@@ -10,21 +10,35 @@ import UIKit
 class SelectCategoryViewController: UIViewController {
 
     @IBOutlet weak var breakfastButton: UIButton!
+    
+    @IBOutlet weak var lunchButton: UIButton!
+    
+    @IBOutlet weak var dinnerButton: UIButton!
+    
+    @IBOutlet weak var dessertButton: UIButton!
+    
+    var selectedCategory : String!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func onSelectCategory(_ sender: Any) {
+        let buttonText = (sender as AnyObject).titleLabel.text
+        self.selectedCategory = buttonText!
+        print("selecting category")
+        print(selectedCategory!)
+        performSegue(withIdentifier: "selectCategory", sender: self)
     }
-    */
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "selectCategory" {
+            let Recipes = segue.destination as? FeedViewController
+            Recipes?.selectedCategory = selectedCategory
+        }
+    }
+    
 }

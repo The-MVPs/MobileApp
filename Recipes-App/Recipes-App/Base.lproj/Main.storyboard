@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ll1-n9-npk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -501,7 +501,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-lU-2ag">
-                                <rect key="frame" x="60.5" y="273" width="293" height="47.5"/>
+                                <rect key="frame" x="60.5" y="272" width="293" height="47.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fE8-lU-2ag" secondAttribute="height" multiplier="370:60" id="gsI-Vv-PId"/>
                                 </constraints>
@@ -509,9 +509,12 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Breakfast">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSelectCategory:" destination="OiF-9D-13B" eventType="touchUpInside" id="yUt-aa-L5C"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-o8-SGi">
-                                <rect key="frame" x="60.5" y="370.5" width="293" height="47.5"/>
+                                <rect key="frame" x="60.5" y="369.5" width="293" height="47.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JJd-o8-SGi" secondAttribute="height" multiplier="370:60" id="9Pa-Rj-AUm"/>
                                 </constraints>
@@ -519,29 +522,38 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Lunch">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSelectCategory:" destination="OiF-9D-13B" eventType="touchUpInside" id="AoL-zx-77o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwJ-sq-sqS">
-                                <rect key="frame" x="60.5" y="468" width="293" height="47.5"/>
+                                <rect key="frame" x="59" y="467" width="296" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IwJ-sq-sqS" secondAttribute="height" multiplier="370:60" id="rUi-h5-T8U"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Snack">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-H5-cQz">
-                                <rect key="frame" x="60.5" y="565.5" width="293" height="47.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="bGE-H5-cQz" secondAttribute="height" multiplier="370:60" id="xHf-md-obH"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Dinner">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSelectCategory:" destination="OiF-9D-13B" eventType="touchUpInside" id="7va-h1-hOq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-H5-cQz">
+                                <rect key="frame" x="59" y="565" width="296" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bGE-H5-cQz" secondAttribute="height" multiplier="370:60" id="xHf-md-obH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Dessert">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSelectCategory:" destination="OiF-9D-13B" eventType="touchUpInside" id="vKc-0H-e75"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Your Meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsA-VR-YPe">
-                                <rect key="frame" x="106.5" y="175" width="201" height="48"/>
+                                <rect key="frame" x="106.5" y="174" width="201" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="JBO-yQ-BVG"/>
                                 </constraints>
@@ -571,6 +583,9 @@
                     <navigationItem key="navigationItem" title="Meal Category" id="mGQ-wU-ZhH"/>
                     <connections>
                         <outlet property="breakfastButton" destination="fE8-lU-2ag" id="3NQ-11-Lqq"/>
+                        <outlet property="dessertButton" destination="bGE-H5-cQz" id="r0q-rh-9du"/>
+                        <outlet property="dinnerButton" destination="IwJ-sq-sqS" id="8UX-fS-Ub2"/>
+                        <outlet property="lunchButton" destination="JJd-o8-SGi" id="s2G-Xk-wdf"/>
                         <segue destination="nBJ-Me-bJU" kind="show" identifier="selectCategory" id="Ayp-rp-XtS"/>
                     </connections>
                 </viewController>
@@ -712,7 +727,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sb4-o1-jhe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13.043478260869566" y="2297.5446428571427"/>
+            <point key="canvasLocation" x="35" y="2313"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Cco-cW-cfg">
