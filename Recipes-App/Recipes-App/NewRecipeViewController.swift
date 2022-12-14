@@ -8,9 +8,11 @@
 import UIKit
 import AlamofireImage
 import Parse
+import DropDown
 
 class NewRecipeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var selectCategoryButton: UIButton!
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var descriptionField: UITextField!
     @IBOutlet weak var ingredientField: UITextView!
@@ -22,12 +24,13 @@ class NewRecipeViewController: UIViewController, UIImagePickerControllerDelegate
     //global variables for Date/Time pickers
     var prepTime = ""
     var cookingTime = ""
-   
+    var selectedCategory = ""
+    let dropDown = DropDown()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //formatter.dateFormat = "HH:mm" or hh:mm for 12 h
+        setupDropdown()
         
     }
     @IBAction func onCameraRollButton(_ sender: Any) {
@@ -132,11 +135,20 @@ class NewRecipeViewController: UIViewController, UIImagePickerControllerDelegate
             }
         }
         
-        
-        //navigate to Succes Page (will have either a back button,
-        //or a button that says "post another" or something.
     }
     
+    func setupDropdown(){
+        dropDown.anchorView = selectCategoryButton
+        dropDown.dataSource = ["Breakfast", "Lunch", "Dinner", "Dessert"]
+        dropDown.selectionAction = { [weak self] (index, item) in
+            self?.selectCategoryButton.setTitle(item, for: .normal)
+            self!.selectedCategory = String(item)
+            print(self!.selectedCategory)
+        }
+    }
+    @IBAction func onCategorySelect(_ sender: Any) {
+        dropDown.show()
+    }
     
 
     @IBAction func onPostAnotherButton(_ sender: Any) {
@@ -144,6 +156,9 @@ class NewRecipeViewController: UIViewController, UIImagePickerControllerDelegate
         dismiss(animated: true, completion: nil)
         
     }
+    
+
+    
     /*
     // MARK: - Navigation
 
