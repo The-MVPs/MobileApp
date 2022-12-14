@@ -124,14 +124,14 @@
             <objects>
                 <viewController title="newRecipeView" modalPresentationStyle="fullScreen" id="38g-AK-zd6" customClass="NewRecipeViewController" customModule="Recipes_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nD8-Tm-BPV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1342"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1284"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="Mqk-gA-15y">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="1342"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="1284"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usI-W9-Iky">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1275"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1217"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kJ8-Kp-ZxK">
                                                 <rect key="frame" x="27" y="300" width="374" height="76"/>
@@ -395,7 +395,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Recipe" id="fta-dP-GDl"/>
-                    <size key="freeformSize" width="414" height="1400"/>
+                    <size key="freeformSize" width="414" height="1342"/>
                     <connections>
                         <outlet property="cookingTimePicker" destination="Hp5-Fc-abi" id="ldf-Mc-yoe"/>
                         <outlet property="descriptionField" destination="dw2-8k-eAT" id="5zh-qI-DRM"/>
@@ -414,7 +414,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1866.6666666666667" y="1781.9196428571427"/>
+            <point key="canvasLocation" x="1866.6666666666667" y="1801.3392857142856"/>
         </scene>
         <!--Success-->
         <scene sceneID="4ze-9U-ryF">
@@ -476,21 +476,29 @@
             </objects>
             <point key="canvasLocation" x="3702.898550724638" y="815.625"/>
         </scene>
-        <!--Profile-->
+        <!--Settings-->
         <scene sceneID="yft-XL-Zr1">
             <objects>
-                <viewController id="gRr-fg-bnd" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WyI-UT-31C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController title="Settings" id="gRr-fg-bnd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vap-oT-eWk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hA-jy-cDf">
+                                <rect key="frame" x="95" y="638" width="224" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign Out"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qEx-jE-QhU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="auY-wt-2Yh"/>
+                    <navigationItem key="navigationItem" title="Settings" id="v1K-DY-JJe"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WyI-UT-31C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4605.7971014492759" y="815.625"/>
+            <point key="canvasLocation" x="4605.7971014492759" y="1549.5535714285713"/>
         </scene>
         <!--Meal Category-->
         <scene sceneID="ah8-ka-mNk">
@@ -552,8 +560,8 @@
                                     <action selector="onSelectCategory:" destination="OiF-9D-13B" eventType="touchUpInside" id="vKc-0H-e75"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Your Meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsA-VR-YPe">
-                                <rect key="frame" x="106.5" y="174" width="201" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Meal Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsA-VR-YPe">
+                                <rect key="frame" x="59.5" y="174" width="295" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="JBO-yQ-BVG"/>
                                 </constraints>
@@ -743,7 +751,7 @@
                         <segue destination="uhO-um-THY" kind="relationship" relationship="viewControllers" id="Zs2-9D-og5"/>
                         <segue destination="hkA-bF-LRG" kind="relationship" relationship="viewControllers" id="K89-vt-F2K"/>
                         <segue destination="fUZ-ol-Vt7" kind="relationship" relationship="viewControllers" id="HUI-yc-XXx"/>
-                        <segue destination="gRr-fg-bnd" kind="relationship" relationship="viewControllers" id="6Ol-1G-ZEM"/>
+                        <segue destination="6Yl-dA-0gh" kind="relationship" relationship="viewControllers" id="6Ol-1G-ZEM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kZ-dX-zEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -789,13 +797,32 @@
             </objects>
             <point key="canvasLocation" x="1868.1159420289857" y="815.625"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="vcR-bF-GFa">
+            <objects>
+                <navigationController title="Settings" automaticallyAdjustsScrollViewInsets="NO" id="6Yl-dA-0gh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="auY-wt-2Yh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mSD-sn-AP7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gRr-fg-bnd" kind="relationship" relationship="rootViewController" id="gZk-0c-jBm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZO-WI-2Q7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4605.7971014492759" y="815.625"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bookmark" catalog="system" width="110" height="128"/>
         <image name="camera" catalog="system" width="128" height="93"/>
         <image name="camera.circle" catalog="system" width="128" height="123"/>
+        <image name="gear" catalog="system" width="128" height="122"/>
         <image name="house" catalog="system" width="128" height="104"/>
-        <image name="person" catalog="system" width="128" height="121"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="tasty_recipe_logo" width="1080" height="1080"/>
