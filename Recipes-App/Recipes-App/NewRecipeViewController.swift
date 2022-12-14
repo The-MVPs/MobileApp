@@ -103,11 +103,13 @@ class NewRecipeViewController: UIViewController, UIImagePickerControllerDelegate
         post["title"] = titleField.text!
         post["description"] = descriptionField.text!
         post["author"] = PFUser.current()!
+        post["category"] = selectedCategory
         post["ingredients"] = ingredientField.text!
         post["directions"] = directionsField.text!
         
         post["preparationTime"] = prepTime
         post["cookingTime"] = cookingTime
+        post["favorited"] = false
         //get image
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
